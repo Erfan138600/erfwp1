@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات اینترنتی عرفان</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4ecdc4;
+            --secondary-color: #ff6b6b;
+            --telegram-color: #0088cc;
+            --instagram-color: #E1306C;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            animation: backgroundShift 20s infinite;
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        @keyframes backgroundShift {
+            0% { background: var(--secondary-color); }
+            25% { background: #45b7d1; }
+            50% { background: #a55eea; }
+            75% { background: #ff9f43; }
+            100% { background: var(--secondary-color); }
+        }
+
+        .header {
+            padding: 1rem;
+            background: rgba(0,0,0,0.3);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .logo {
+            width: 60px;
+            height: auto;
+            filter: drop-shadow(0 0 5px white);
+            transition: transform 0.3s;
+            border-radius: 15px;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 8rem 1rem 2rem;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .cta-btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 30px;
+            color: white;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .telegram-btn {
+            background: linear-gradient(45deg, var(--telegram-color), #00aced);
+        }
+
+        .website-btn {
+            background: linear-gradient(45deg, #34a853, #0f9d58);
+        }
+
+        .instagram-btn {
+            background: linear-gradient(45deg, var(--instagram-color), #F56040);
+        }
+
+        .trust-badges {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 1rem;
+            background: rgba(0,0,0,0.6);
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .badge-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0.5rem;
+        }
+
+        .badge-icon {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                gap: 1rem;
+            }
+
+            .logo {
+                width: 100px;
+            }
+
+            .trust-badges {
+                grid-template-columns: 1fr;
+                position: static;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="https://imgurl.ir/uploads/f261483_copilot_image_1738263023743.jpeg" 
+             alt="لوگو جدید" 
+             class="logo">
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>خدمات اینترنتی عرفان</h1>
+            <p>خریدار گروه‌های قدیمی تلگرامی شما</p>
+            
+            <div class="button-group">
+                <a href="https://www.instagram.com/erfanalikhani_official?igsh=MW05OHg2cjMxY3Rk" 
+                   class="cta-btn instagram-btn"
+                   target="_blank">
+                    <i class="fab fa-instagram"></i> اینستاگرام من
+                </a>
+                <a href="https://t.me/erfan_king01" 
+                   class="cta-btn telegram-btn"
+                   target="_blank">
+                    <i class="fab fa-telegram"></i> ارتباط در تلگرام
+                </a>
+                <a href="https://www.erfwp.ir" 
+                   class="cta-btn website-btn"
+                   target="_blank">
+                    <i class="fas fa-globe"></i> وبسایت رسمی
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <div class="trust-badges">
+        <div class="badge-item">
+            <i class="fas fa-headset badge-icon"></i>
+            <span>پشتیبانی 24 ساعته</span>
+        </div>
+        <div class="badge-item">
+            <i class="fas fa-shield-alt badge-icon"></i>
+            <span>مورد اعتماد</span>
+        </div>
+        <div class="badge-item">
+            <i class="fas fa-tag badge-icon"></i>
+            <span>بهترین قیمت</span>
+        </div>
+    </div>
+</body>
+</html>
